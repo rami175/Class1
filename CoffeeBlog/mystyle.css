@@ -1,0 +1,52 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: arial;
+}
+p {
+  line-height: 2;
+}
+img {
+  max-width: 100%;
+}
+div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* utilities */
+.more_info {
+  background-color: rgb(143, 71, 30);
+  color: white;
+}
+/* header */
+.sit-init {
+  background-image: url(./img/banner.jpg);
+  background-size: cover;
+  background-color: grey;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+.MoreInfo {
+  background-color: rgb(143, 71, 30);
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 50px 0px;
+  align-self: auto;
+}
