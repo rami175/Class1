@@ -12,21 +12,22 @@ p {
 img {
   max-width: 100%;
 }
-/* div {
-  margin-top: 10px;
-  margin-bottom: 10px;
-} */
+a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
 footer {
   background-color: black;
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: cuspace-around;
+  align-items: center;
 }
-footer a {
-  color: white;
-  text-decoration: none;
-  padding-left: 30px;
-  padding-right: 30px;
-}
+
 /* utilities */
 .btn {
   display: block;
@@ -51,6 +52,7 @@ footer a {
   flex-direction: row;
   justify-content: center;
 }
+
 /* header */
 .sit-init {
   background-image: url(./img/banner.jpg);
@@ -59,6 +61,12 @@ footer a {
   height: 400px;
   text-align: center;
   color: white;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
 }
 /* main */
 main {
@@ -81,4 +89,68 @@ main {
   background-color: black;
   width: 75%;
   margin: 300px;
+}
+/* Contact */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.form-inputs {
+  background-color: white;
+  padding: 20px;
+  margin-top: -50px;
+}
+.form-inputs .btn {
+  background-color: black;
+  padding: 10px;
+  font-size: 14px;
+  width: 100px;
+}
+.form-inputs div {
+  margin: 20px;
+}
+.form-inputs input,
+.form-inputs textarea {
+  width: 70%;
+  padding: 5px;
+}
+.form-inputs lable {
+  display: inline-block;
+  width: 80px;
+}
+/* Courses */
+.main-container {
+  margin: auto;
+  width: 80%;
+  background-color: rgb(210, 229, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.course {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: solid;
+}
+.course img {
+  height: 50%;
+  width: 50%;
+  margin: 30px;
+}
+/* hidinng text */
+.hid {
+  display: none;
+  padding: 20px;
+}
+/* expanding and showing text */
+.main-container :hover {
+  width: 50%;
+  height: 50%;
+}
+.main-container :hover + .hid {
+  display: flex;
 }
